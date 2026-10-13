@@ -1,0 +1,10 @@
+metric,value
+Source training rows,182125.0
+Clean transaction rows,182125.0
+Unique users,5000.0
+Observed device IDs,8743.0
+Synthetic merchant records,210.0
+Synthetic alerts,16706.0
+Source fraud-label rate,0.016417295813315032
+Median amount,20.06667592171327
+IQR outlier candidates retained,11278.0

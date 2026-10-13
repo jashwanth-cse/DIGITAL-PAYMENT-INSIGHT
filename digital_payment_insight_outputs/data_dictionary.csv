@@ -1,0 +1,21 @@
+field_or_group,provenance,definition_and_interpretation
+transaction_id,Source,Unique transaction identifier from the training file.
+user_id,Source,User identifier from the training file.
+timestamp,Source; unit/reference unverified,Preserved numeric timestamp. Do not interpret as a real date/time without metadata.
+amount,Source,"Transaction amount; IQR candidates are flagged, not deleted."
+merchant_category_code,Source,Original encoded merchant-category code; no semantic mapping assumed.
+merchant_category,Normalized/cleaned,Neutral label such as category_0; unknown marks injected missing values.
+country_code,Source; encoded,Original numeric country code; do not infer country names without a mapping.
+device_id,"Source, with controlled missingness in working copy",Device identifier; missing values are retained and flagged.
+channel_code,Source,Original numeric channel code.
+channel,Normalized/cleaned,Neutral channel_0/channel_1 labels; no real-world channel names assumed.
+hours_since_prev_txn,Source; unit unverified,Preserved unchanged; only relative numeric thresholds are used.
+label,Source training label,Fraud label in training data; not used to generate synthetic alerts.
+customer_segment,Derived from source,Low/medium/high activity segment based on observed transaction frequency.
+region / tenure_months,Synthetic,"Generated attributes for assessment completeness, not source facts."
+device_type,Synthetic,Generated device class; not present in the source file.
+new_device_flag,Derived proxy,"First observed user-device pair in this training file, not proof of newly registered device."
+merchant_id / merchant region,Synthetic,"Generated merchant keys and regions, assigned consistently for joins."
+alert_id / review_status / reason_category,Synthetic rule-based,Simulated review queue generated from transaction features only; not real manual review results.
+elapsed_hour_index_assuming_seconds,Derived working assumption,"timestamp // 3600; relative elapsed-hour bin only, not time-of-day."
+amount_outlier_iqr_flag,Derived from source amount,"Flags values outside 1.5×IQR fences; candidates for investigation, not automatic errors."
