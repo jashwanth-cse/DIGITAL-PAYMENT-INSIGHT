@@ -1,4 +1,0 @@
-device_novelty,transaction_count,median_amount,fraud_rate,alert_rate
-First seen for user in training data,9226,19.99402251169834,0.015066117494038586,1.0
-Previously seen for user in training data,172353,20.066520679343128,0.016495216213236786,0.04023138558655782
-Unknown - missing device,546,21.00846012721776,0.014652014652014652,1.0

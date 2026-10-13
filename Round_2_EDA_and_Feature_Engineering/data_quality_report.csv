@@ -1,0 +1,7 @@
+metric,original_source,working_copy_before_cleaning,cleaned_working_copy,treatment
+Training rows,182125,182489,182125,Duplicate rows were injected only into the working copy; duplicate IDs removed.
+Missing merchant category records,0,912,0,Missing working-copy category values labelled 'unknown'; source column retained as numeric code where available.
+Duplicate transaction ID records,0,364,0,"Drop duplicate IDs, keeping the first record."
+Distinct channel labels,2,8,2,Normalize case and whitespace; retain neutral channel_0/channel_1 names.
+Missing device IDs,0,546,546,Do not impute device identity; explicitly flag incomplete history.
+IQR amount outlier candidates,11278,11278,11278,Preserve values and flag for review; outliers are not automatically errors.

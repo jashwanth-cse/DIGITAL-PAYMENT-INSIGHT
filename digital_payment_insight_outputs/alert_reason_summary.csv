@@ -1,6 +1,0 @@
-reason_category,alert_count,fraud_rate_in_flagged_transactions,median_amount
-First-seen user-device pair in training data,5366,0.015654118524040254,19.697091677296456
-Low-tail supplied previous-transaction gap,5225,0.01645933014354067,19.75657083079893
-Multiple signals,3945,0.014195183776932827,20.816187380107497
-High amount (at/above source 99th percentile),1653,0.024803387779794312,148.91525803149625
-Incomplete device history,517,0.015473887814313346,20.91425057519657
